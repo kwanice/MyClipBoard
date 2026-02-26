@@ -5,26 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politique de Confidentialité - MyClipboard</title>
     <style>
-        body { font-family: sans-serif; background: #121212; color: #e0e0e0; line-height: 1.6; padding: 40px 20px; max-width: 800px; margin: auto; }
-        h1 { color: white; border-bottom: 2px solid #3d5afe; padding-bottom: 10px; }
-        h2 { color: #3d5afe; margin-top: 30px; }
-        a { color: #3d5afe; text-decoration: none; }
-        .back { margin-bottom: 20px; display: block; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 15px; }
+        .highlight {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back">← Retour à l'accueil</a>
-    <h1>Politique de Confidentialité</h1>
-    <p><strong>Dernière mise à jour :</strong> 20 février 2026</p>
-    
-    <h2>1. Collecte des données</h2>
-    <p>MyClipboard accède au presse-papiers localement pour permettre la sauvegarde et les Smart Actions. Aucune donnée n'est collectée ou transmise à des serveurs externes.</p>
-    
-    <h2>2. Stockage</h2>
-    <p>Toutes les données sont stockées sur votre appareil via une base de données Room. Vous avez le plein contrôle sur leur suppression.</p>
 
-    <footer>
-        <p>© 2026 MyClipboard - contact@bestserviceforyou.com</p>
-    </footer>
+<div class="container">
+    <h1>Politique de Confidentialité de MyClipboard</h1>
+    <p><strong>Dernière mise à jour : 26 Février 2026</strong></p>
+
+    <p>La protection de votre vie privée est notre priorité. Cette politique de confidentialité explique comment l'application MyClipboard ("l'Application") collecte, utilise et protège vos informations lorsque vous utilisez notre service sur Android.</p>
+
+    <div class="highlight">
+        <h2>1. Utilisation de l'API AccessibilityService (Important)</h2>
+        <p>L'Application utilise l'API <strong>AccessibilityService</strong> (Service d'Accessibilité) d'Android de manière stricte et limitée. Ce service est le cœur du fonctionnement de MyClipboard.</p>
+        <ul>
+            <li><strong>Pourquoi l'utilisons-nous ?</strong> Ce service est utilisé exclusivement pour détecter les événements liés à la copie de texte sur votre appareil (lorsque vous appuyez sur "Copier" dans n'importe quelle application).</li>
+            <li><strong>Ce que nous faisons :</strong> Lorsqu'une action de copie est détectée, le service permet d'afficher l'interface flottante de MyClipboard et d'enregistrer le texte copié dans votre historique local.</li>
+            <li><strong>Ce que nous NE faisons PAS :</strong> Le service d'accessibilité <strong>n'est pas</strong> utilisé pour lire vos écrans à votre insu, n'enregistre pas vos mots de passe de manière ciblée, et <strong>ne transmet aucune donnée lue à des serveurs distants</strong>. Absolument toutes les données capturées restent sur votre appareil.</li>
+        </ul>
+    </div>
+
+    <h2>2. Collecte et Stockage des Données Locales</h2>
+    <p><strong>Vos textes vous appartiennent.</strong> L'intégralité de votre historique de presse-papiers, de vos tags et de vos préférences est stockée <strong>localement</strong> sur la mémoire interne de votre téléphone via une base de données sécurisée. MyClipboard ne possède aucun serveur distant pour stocker votre historique de copie. Par conséquent, nous n'avons aucun accès à vos clips.</p>
+
+    <h2>3. Services Tiers et Données Techniques</h2>
+    <p>Bien que votre historique soit 100% hors-ligne, l'Application intègre des services fournis par Google qui peuvent collecter certaines données techniques pour fonctionner :</p>
+    <ul>
+        <li><strong>Google AdMob (Publicités) :</strong> Pour la version gratuite, nous utilisons AdMob pour afficher des publicités. Ce service peut utiliser des identifiants publicitaires et collecter des informations techniques (modèle de l'appareil, version d'Android, adresse IP) pour vous proposer des annonces pertinentes et mesurer leurs performances. Pour plus d'informations, consultez les <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>.</li>
+        <li><strong>Google Play Billing (Achats Intégrés) :</strong> Si vous choisissez de passer à la version Premium, la transaction est entièrement gérée et sécurisée par Google Play. MyClipboard n'a jamais accès à vos coordonnées bancaires ou informations de carte de crédit.</li>
+    </ul>
+
+    <h2>4. Partage des Données</h2>
+    <p>Nous ne vendons, n'échangeons ni ne louons <strong>jamais</strong> vos données personnelles à des tiers. Les seules données partagées sont les données techniques anonymisées gérées par les SDK Google mentionnés ci-dessus (AdMob, Billing).</p>
+
+    <h2>5. Vos Droits et Contrôle (RGPD)</h2>
+    <p>En accord avec le Règlement Général sur la Protection des Données (RGPD), vous disposez d'un contrôle total sur vos données :</p>
+    <ul>
+        <li><strong>Droit d'accès et de suppression :</strong> Puisque toutes les données sont locales, vous pouvez effacer l'intégralité de votre historique directement depuis les paramètres de l'Application, ou en désinstallant simplement MyClipboard de votre appareil.</li>
+        <li><strong>Désactivation du service :</strong> Vous pouvez à tout moment révoquer l'autorisation du service d'accessibilité dans les paramètres système de votre téléphone Android.</li>
+    </ul>
+
+    <h2>6. Modifications de cette Politique</h2>
+    <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment pour refléter les mises à jour de l'Application ou les exigences légales de Google Play. Nous vous encourageons à consulter cette page régulièrement.</p>
+
+    <h2>7. Nous Contacter</h2>
+    <p>Si vous avez la moindre question concernant cette politique de confidentialité ou le fonctionnement de l'application, vous pouvez nous contacter en toute transparence à l'adresse suivante :</p>
+    <p><strong>Email :</strong> <a href="mailto:f.gab76000@gmail.com">f.gab76000@gmail.com</a></p>
+
+</div>
+
 </body>
 </html>
